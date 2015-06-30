@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+// import net.gravitydevelopment.updater.Updater;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -32,6 +34,9 @@ public class Kudos extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 		saveDefaultConfig();
+//		if (getConfig().getBoolean("auto-update")) {
+//			Updater updater = new Updater(this, id, this.getFile(), Updater.UpdateType.DEFAULT, true);
+//		}
 		getCommand("kudos").setExecutor(this);
 		loadKudos();
 	}
