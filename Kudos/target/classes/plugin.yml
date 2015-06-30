@@ -1,0 +1,10 @@
+name: Kudos
+author: AniSkywalker
+main: com.zinncomputer.Kudos
+version: 0.0.1
+commands:
+  kudos:
+    description: Either get someone's kudos or give kudos.
+    usage: /<command> [player name for getting]
+    permission: kudos.kudos
+    permission-message: Kudos to you for trying, but you don't have permission!
